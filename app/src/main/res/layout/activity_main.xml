@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sarthaktaneja.moviebuff.MainActivity"
+    android:background="@drawable/ic_launcher_background">
+
+    <LinearLayout
+        android:id="@+id/lyt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_corner_search">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+           />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_main1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lyt_search"
+        android:layout_marginTop="30dp"/>
+
+
+
+</RelativeLayout>
