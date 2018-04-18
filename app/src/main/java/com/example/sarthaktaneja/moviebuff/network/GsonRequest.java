@@ -27,6 +27,7 @@ public class GsonRequest extends Request<Object> {
 
     public GsonRequest(int method, String url, Response.Listener<Object> listener, Response.ErrorListener errorListenerlistener,Object model) {
         super(method, url, errorListenerlistener);
+        Log.d("-------------", "GsonRequest: url"+url);
         this.clazz = model;
         this.headers = headers;
         this.listener = listener;
@@ -35,11 +36,12 @@ public class GsonRequest extends Request<Object> {
     @Override
     protected Response<Object> parseNetworkResponse(NetworkResponse response) {
         try {
+            Log.d("----------", String.valueOf(response));
             String json = new String(
                     response.data,
                     HttpHeaderParser.parseCharset(response.headers));
 
-            Log.d("----------", String.valueOf(clazz.getClass()));
+
 
             return Response.success(
                     gson.fromJson(json,clazz.getClass()),

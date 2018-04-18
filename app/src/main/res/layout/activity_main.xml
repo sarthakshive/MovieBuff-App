@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sarthaktaneja.moviebuff.MainActivity"
-    android:background="@drawable/ic_launcher_background">
+    >
 
     <LinearLayout
         android:id="@+id/lyt_search"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:padding="8dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rounded_corner_search">
 
         <TextView
@@ -36,7 +38,5 @@
         android:layout_width="match_parent"
         android:layout_below="@id/lyt_search"
         android:layout_marginTop="30dp"/>
-
-
 
 </RelativeLayout>

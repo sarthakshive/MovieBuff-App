@@ -4,6 +4,9 @@ package com.example.sarthaktaneja.moviebuff;
  * Created by sarthaktaneja on 17/4/18.
  */
 
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
