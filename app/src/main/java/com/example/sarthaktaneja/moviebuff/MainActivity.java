@@ -1,30 +1,28 @@
 package com.example.sarthaktaneja.moviebuff;
 
-import android.content.Context;
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.example.sarthaktaneja.moviebuff.Model.Pojo;
 import com.example.sarthaktaneja.moviebuff.RecyclerView.RecycleAdapter;
 import com.example.sarthaktaneja.moviebuff.network.GsonRequest;
 import com.example.sarthaktaneja.moviebuff.network.VolleyQueue;
 
-import java.util.List;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     public final String TAG = "MyTag";
     EditText search;
@@ -49,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecyclerView.LayoutManager layoutManager1 = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(layoutManager1);
         button.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -56,13 +56,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         value = search.getText().toString();
         showProgress();
         String url = "https://api.themoviedb.org/3/search/movie?api_key=63eb33950ea337fbdccd8195017f785c&query=" + value;
-        VolleyQueue.getRequestQueue(this).add(new GsonRequest(0, url, new Response.Listener<Object>() {
+
+        Request customReq = new GsonRequest(0, url, new Response.Listener<Object>() {
             @Override
             public void onResponse(Object response) {
                 hideProgress();
                 if (response instanceof Pojo) {
 
                     setAdapter((Pojo) response);
+                    showRecycler();
                 }
             }
         }, new Response.ErrorListener() {
@@ -72,7 +74,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d("-------------", error.getMessage());
                 Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
-        }, new Pojo()));
+        }, new Pojo());
+
+        VolleyQueue.getRequestQueue(this).add(customReq);
     }
 
             private void setAdapter(Pojo response) {
@@ -87,5 +91,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             private void hideProgress() {
                 findViewById(R.id.progressbar).setVisibility(View.INVISIBLE);
             }
+
+            private void showRecycler()
+            {
+                findViewById(R.id.recycler_view).setVisibility(View.VISIBLE);
+            }
+
+            private void hideRecycler()
+            {
+                findViewById(R.id.recycler_view).setVisibility(View.INVISIBLE);
+            }
+
+
     }
 

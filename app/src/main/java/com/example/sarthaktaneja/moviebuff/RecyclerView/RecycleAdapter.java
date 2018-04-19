@@ -8,9 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.sarthaktaneja.moviebuff.MainActivity;
-import com.example.sarthaktaneja.moviebuff.Pojo;
-import com.example.sarthaktaneja.moviebuff.Pojo1;
+import com.example.sarthaktaneja.moviebuff.Model.Pojo1;
 import com.example.sarthaktaneja.moviebuff.R;
 import com.squareup.picasso.Picasso;
 
@@ -54,8 +52,9 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.DetailVi
     @Override
     public void onBindViewHolder(DetailViewHolder holder, int position) {
         holder.title.setText(results.get(position).getTitle());
-        String imgUrl="http://image.tmdb.org/t/p/w185/" + results.get(position).getPosterPath();
-        Picasso.with(context).load(imgUrl).error(R.drawable.search_icon).into(holder.movieimg);
+        String imgUrl="http://image.tmdb.org/t/p/w500/" + results.get(position).getPosterPath();
+        Picasso.with(context).load(imgUrl).error(R.drawable.ic_error_outline_black_24dp).placeholder(R.drawable.rotate).into(holder.movieimg);
+        holder.rating.setText(results.get(position).getVoteAverage().toString());
 
     }
 

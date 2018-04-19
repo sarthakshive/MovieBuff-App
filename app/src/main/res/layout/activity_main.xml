@@ -5,27 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sarthaktaneja.moviebuff.MainActivity"
+    android:background="@drawable/gradient"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     >
 
     <RelativeLayout
         android:id="@+id/lyt_search"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
         android:background="@drawable/rounded_corner_search"
+
         >
 
         <EditText
             android:id="@+id/search"
-            android:layout_width="300dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="@string/search"
-            android:padding="2dp"
+            android:padding="3dp"
             android:textAlignment="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:textColor="@color/colorPrimaryDark"
+            android:backgroundTint="@android:color/transparent"
+            android:textCursorDrawable="@null"
            />
 
         <ImageView
@@ -33,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/search_icon"
+            android:padding="2dp"
             android:layout_toRightOf="@id/search"
             />
 
@@ -41,8 +46,7 @@
     <include layout="@layout/activity_main1"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_below="@id/lyt_search"
-        android:layout_marginTop="30dp"/>
+        android:layout_below="@id/lyt_search" />
 
     <ProgressBar
         android:layout_width="wrap_content"

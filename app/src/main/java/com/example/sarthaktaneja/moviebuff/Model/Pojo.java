@@ -1,4 +1,4 @@
-package com.example.sarthaktaneja.moviebuff;
+package com.example.sarthaktaneja.moviebuff.Model;
 
 /**
  * Created by sarthaktaneja on 17/4/18.
@@ -6,6 +6,7 @@ package com.example.sarthaktaneja.moviebuff;
 
 import java.io.Serializable;
 import java.util.List;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

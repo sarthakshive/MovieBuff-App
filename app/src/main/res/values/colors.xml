@@ -5,4 +5,929 @@
     <color name="colorAccent">#FF4081</color>
     <color name="year">#999999</color>
     <color name="title">#222222</color>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="dark_grey">#333333</color>
+    <color name="separators">#cccccc</color>
+    <color name="passbook_separators">#ebebeb</color>
+    <color name="paytm_passbook_selected">@color/color_012b72</color>
+    <color name="paytm_blue">#00baf2</color>
+    <color name="paytm_blue_selected">#00B0DE</color>
+    <color name="flight_blue">#00B0DE</color>
+    <color name="disabled_blue">#7F00baf2</color>
+    <color name="dark_blue">#012B73</color>
+    <color name="light_blue">#9ce0f8</color>
+    <color name="calender_light_blue">#9ce0f8</color>
+    <!--<color name="blue">#00B7E3</color>-->
+    <color name="custom">#bb000000</color>
+    <color name="translucent_black">#88000000</color>
+    <color name="bg_grid_grey">#ebebeb</color>
+    <color name="bg_staggered_grid_grey">#f5f5f5</color>
+    <color name="tab_grey">#979797</color>
+    <color name="gray">@color/color_999999</color>
+    <color name="gray_operator_border">#e6e6e6</color>
+    <color name="gray_cst_border">#eaeaea</color>
+    <color name="flight_gray">#9b9b9b</color>
+    <color name="more_flights_available">@color/color_00b9f5</color>
+    <color name="more_flights_ignore">#ff3c00</color>
+    <color name="flight_from_to_color">@color/color_4a4a4a</color>
+    <color name="flight_number_color">#ababab</color>
+    <color name="insurance_not_applicable_flight_color">#979797</color>
+
+    <color name="bus_from_to_color">#adadad</color>
+
+    <color name="green">#2EA440</color>
+
+    <color name="referral_separator">#c5d9fb</color>
+
+
+    <color name="grid_percentage_orange">#F7951F</color>
+    <color name="grid_offer_blue">#ebfaff</color>
+    <color name="grid_item_background">#f9f7e0</color>
+    <color name="color_000000">#000000</color>
+    <color name="edit_hint_color">#707070</color>
+    <color name="steel_gray">#707070</color>
+    <color name="bg_gray">#d3d3d3</color>
+    <color name="dark_gray">#515151</color>
+
+    <color name="cache_color_hint">#00000000</color>
+    <color name="btn_menu_link_pressed">#ccb7b8bd</color>
+    <!-- <color name="light_grey">#cdcdcd</color> -->
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">
+        @color/vpi__bright_foreground_holo_light
+    </color>
+    <color name="vpi__bright_foreground_inverse_holo_light">
+        @color/vpi__bright_foreground_holo_dark
+    </color>
+    <color name="promocode_text_green">#84BA84</color>
+    <color name="promocode_text_red">#E79EA5</color>
+    <color name="semi_translucent_black">#a1000000</color>
+    <color name="light_grey">#f0f0f0</color>
+    <color name="light_red">#e25d6e</color>
+    <color name="smart_list_divider_grey">#f4f4f4</color>
+    <color name="heading_dark_grey">#444444</color>
+    <color name="text_blue">#007aff</color>
+    <color name="light_gray_filter_screen">#f6f6f6</color>
+    <color name="light_gray_filter_type_separator">#b7b7b7</color>
+    <color name="paytm_default">#E0E0E0</color>
+    <color name="sky_blue">#85d3ef</color>
+    <color name="text_gray">#929292</color>
+    <color name="text_color_collection_heading">@color/color_494949</color>
+    <color name="text_color_item_heading">#333333</color>
+    <color name="text_color_item_sub_heading">#333333</color>
+    <color name="text_color_item_price_home_page">#929292</color>
+    <color name="text_color_item_list_home_page">#007aff</color>
+    <color name="text_color_filter_page_refine_icon">#333333</color>
+    <color name="text_color_filter_page_layout_heading">#333333</color>
+    <color name="text_color_filter_page_item_heading">@color/color_666666</color>
+    <color name="text_color_filter_page_range">#666766</color>
+    <color name="text_color_filter_page_item_collection">@color/color_666666</color>
+    <color name="text_color_proceed_button">#ffffff</color>
+    <color name="text_color_catalog_page_item_sub_heading">#333333</color>
+    <color name="text_color_catalog_page_item_heading">#333333</color>
+    <color name="text_color_filter_page_clearall">@color/paytm_blue</color>
+    <color name="bargain_screen_white">#ffffff</color>
+    <color name="divider_in_product_detail">#cccccc</color>
+    <color name="cyan">#50cdec</color>
+    <color name="order_history_gray">#f4f4f4</color>
+    <color name="bargain_date">@color/color_999999</color>
+    <color name="control_pressed">#90d4ef</color>
+    <color name="bargain_agent_refresh_button_bg">#333333</color>
+    <color name="blue_filtered_list">#e0ecfa</color>
+    <color name="orange_promo_msg">#F39616</color>
+    <color name="unselected_dark_grey">@color/color_999999</color>
+    <color name="tab_separator">#cbcbcb</color>
+    <color name="swpie_down_background">#cd000000</color>
+    <color name="radio_recharge_selected">#000000</color>
+    <color name="default_progress_bar_color">#0099cc</color>
+    <color name="refresh_red_color">#ff0000</color>
+    <color name="cancel_red_color">#fd5c5c</color>
+    <color name="refresh_green_color">#00cd00</color>
+    <color name="refresh_yellow_color">#ECAE00</color>
+    <color name="refresh_blue_color">#04f0f0</color>
+    <color name="ledger_txn_desc_2">@color/color_666666</color>
+    <color name="ledger_status_success">#00CC99</color>
+    <color name="ledger_status_pending">#FF9933</color>
+    <color name="ledger_status_failure">#FF0000</color>
+    <color name="social_btn_separator">#f6f6f6</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="facebook_icon_color">#2a80b9</color>
+    <color name="google_plus_icon_color">#e84c3d</color>
+    <color name="bus_ticket_grey">#979797</color>
+    <color name="bus_ticket_white">#FFFFFF</color>
+    <color name="select_seat_preview_text">#b0b0b0</color>
+    <color name="booking_confirm_dark_grey">#ececec</color>
+    <color name="bus_type_text">#8c8c8c</color>
+    <color name="bus_time_color">#0a0a0a</color>
+    <color name="bus_duration_color">#adadad</color>
+    <color name="bus_searchlist_divider_color">#f4f4f4</color>
+    <color name="bus_seats_text_color">#f8631a</color>
+    <color name="bus_sold_out_bg_color">#9b9b9b</color>
+    <color name="bus_red_line">#d0011b</color>
+    <color name="bus_review_text_color">#002e6e</color>
+    <!--<color name="green">#8FCC85</color>-->
+    <color name="color_33b5e5">#ff33b5e5</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="blue_events">@color/color_33b5e5</color>
+    <color name="movie_phy_row_id_color">#787878</color>
+    <color name="white">#ffffff</color>
+    <color name="white_50_opacity">#5fff</color>
+    <color name="bus_seats_availability_color">#72e53e</color>
+    <color name="bus_filter_separator_grey">#eaeaea</color>
+    <color name="bus_filter_txt_grey">#636363</color>
+    <color name="bus_filter_bg_grey">#353535</color>
+    <color name="calender_grey">#fbfbfb</color>
+    <color name="bus_ticket_background_holo_light">#fff3f3f3</color>
+    <color name="account_separtor_bg">#f2f2f2</color>
+    <color name="account_separtor_txt">#808080</color>
+    <color name="paytm_automatic_background">#f8f8f8</color>
+    <color name="red">#FF0000</color>
+    <color name="btn_pressed_grey">#565656</color>
+    <color name="btn_disabled_blue">#7FDBDB</color>
+    <color name="wallet_promo_success_green">#25A35B</color>
+    <color name="wallet_progress_bg">#64000000</color>
+    <color name="wallet_separator_bg">#EEEEEE</color>
+    <color name="hint_text_color">#808080</color>
+    <color name="wallet_error">#F76A60</color>
+    <color name="light_translucent_grey">#64d3d3d3</color>
+    <color name="dark_translucent_grey">#96d3d3d3</color>
+    <color name="creamy_white">#f9f9f9</color>
+    <color name="pdp_price_lyt_pressed">#E83C00</color>
+    <color name="pdp_price_lyt_normal">#FC4919</color>
+    <color name="pdp_price_lyt_disabled">#BFBFBF</color>
+    <color name="twitter_sign_in_blue">#32CBFF</color>
+    <color name="wallet_disabled_blue">#5000baf2</color>
+    <color name="wallet_disabled_gray">#CCCCCC</color>
+    <color name="rating_bar_progress">#FFC100</color>
+    <color name="rating_bar_bg">#D7D7D7</color>
+    <color name="ht_rating_square_selected">#ffba20</color>
+    <color name="ht_rating_square_default">#ebebeb</color>
+    <color name="hotel_list_menu_pressed_bg">#D2D2D2</color>
+    <color name="hotel_gray_ADADAD">#ADADAD</color>
+    <color name="hotel_gray_7A7A7A">#7A7A7A</color>
+    <color name="otp_dialog_success_status_message">#006400</color>
+    <color name="hotel_activity_bg">#F5F5F5</color>
+    <color name="btn_orange">#FF4200</color>
+    <color name="btn_orange_pressed">#C13100</color>
+    <color name="ordersummary_btn_click">#30000000</color>
+    <color name="wallet_app_ad_banner_bg">#F3F3F3</color>
+    <color name="wallet_app_ad_banner_description">#575757</color>
+
+    <color name="hotel_light_grey">#979797</color>
+    <color name="hotel_comment_grey">#777777</color>
+    <color name="hotel_dark_grey">#333333</color>
+    <color name="hotel_blue">#022E6F</color>
+    <color name="cart_item_oos">#B6B6B6</color>
+    <color name="offer_green">#b9e986</color>
+    <color name="cart_oos_text">#D0021B</color>
+    <color name="cart_count_black">@color/color_4a4a4a</color>
+    <color name="cart_grey">#9B9B9B</color>
+    <color name="cart_black">#333333</color>
+    <color name="cart_black1">#040404</color>
+    <color name="cart_grey1">#A0A0A0</color>
+    <color name="cart_blue">@color/paytm_blue</color>
+    <color name="cart_grey3">#5A5A5A</color>
+    <color name="address_error_layout">#505050</color>
+    <!-- Post Payment colors -->
+    <color name="dark_mint_green">#20bf7a</color>
+
+
+    <color name="done_text_color">@color/paytm_blue</color>
+    <color name="select_address_text_color">#0E0000</color>
+    <color name="add_address_text_color">#0C0000</color>
+    <color name="address_separator_color">#ebebeb</color>
+    <color name="delete_text_color">#141414</color>
+    <color name="hint_color">#979797</color>
+    <color name="paytm_text_color">#939393</color>
+    <color name="trip_advisor_text_color">#56953c</color>
+    <color name="holidayiq_text_color">#9d5ce3</color>
+    <color name="recycler_divider_color">#66979797</color>
+    <color name="add_cards_btn_color">#ff4200</color>
+    <color name="seller_store_header_background">#ffffff</color>
+    <color name="seller_banner_header">#424242</color>
+    <color name="seller_rating_star">#f5a623</color>
+    <color name="seller_banner_holder">#4F5965</color>
+    <color name="seller_header_banner_title_lyt">#F5F8F9</color>
+    <color name="lyt_passenger_details">#80000000</color>
+    <color name="hotel_default_image_color">#F7F7F7</color>
+    <color name="hotel_filter_separator">#E0E0E0</color>
+    <color name="hotel_default_image_border">#E7E7E7</color>
+    <color name="financial_key_value">#595959</color>
+    <color name="electricity_info_color">#a4a4a4</color>
+    <color name="custom_edittext_hint_color">@color/color_999999</color>
+    <color name="contact_bg_color">#edf5ff</color>
+    <color name="cluster_background_color">#127ea0</color>
+
+    <color name="flight_search_button">#FF3C00</color>
+    <color name="flight_ticket_no_stops">@color/color_4a4a4a</color>
+    <color name="flight_ticket_black">#000000</color>
+    <color name="flight_name_black">@color/color_4a4a4a</color>
+    <color name="flight_price_black">#050505</color>
+    <color name="flight_stop_durtaion">#8c8c8c</color>
+    <color name="flight_ticket_airline_code">#434343</color>
+
+    <color name="flight_row_selection">#E8FAFF</color>
+    <color name="flight_itenerary_divider">#efefef</color>
+    <!--Required for smoothpay-->
+    <!--Required for smoothpay-->
+    <color name="contacts_header_text_color">#FF5F504D</color>
+    <color name="contacts_background">#FFF1E8BF</color>
+    <color name="dialog_green_bg">#FFA3CD75</color>
+    <color name="mb_gray">#ffdedede</color>
+    <color name="smoothpay_action_button_processing_state">#a1000000</color>
+    <color name="smoothpay_tool_bar_bg">#fffdfdfd</color>
+    <color name="add_money_header_text">#404040</color>
+    <color name="p2p_home_screen_dividers">#989898</color>
+    <color name="transparent_bg">#00000000</color>
+    <color name="mb_red">#ffff4444</color>
+    <color name="light_grey_divider">#f0f0f0</color>
+    <color name="button_travellers">#f4f4f4</color>
+    <color name="button_travellers_selected">#D2D2D2</color>
+    <color name="flight_home_input_selected">#434343</color>
+    <color name="flight_date">#878787</color>
+    <color name="flight_blue_btn">#022E6F</color>
+    <color name="flight_itenarary_city_name">@color/color_4a4a4a</color>
+    <color name="flight_tab_blue">@color/color_00b9f5</color>
+    <color name="flight_itenarary_layover_time">@color/color_666666</color>
+    <color name="flight_tab_unselect">#404040</color>
+    <color name="flight_code_color">@color/color_4a4a4a</color>
+    <color name="flight_search_list_subtitle_color">#8c8c8c</color>
+    <!--Merchant Pay-->
+    <color name="merchnat_bill_amount_color">#9d9598</color>
+    <color name="theme_brown">#5a4c51</color>
+    <color name="merchant_pay_divider_color">#ffdedede</color>
+    <color name="pencil_seperator">#5A4C51</color>
+    <color name="merchant_brand_name_color">#dbdbdb</color>
+    <color name="wallet_balance">#e56d68</color>
+    <color name="wallet_balance_bg_blue">#5500baf2</color>
+    <color name="text_disabled_gray">#CCCCCC</color>
+    <color name="warning_message_yellow">#9F6000</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="warm_gray">#969696</color>
+
+    <color name="movies_red">#E31114</color>
+    <color name="movies_green">#7CD509</color>
+    <color name="movies_seat_selected">#7BD503</color>
+    <color name="movies_seat_sold_out">#e0e0e0</color>
+    <color name="transperent">#00000000</color>
+
+
+    <color name="movie_not_available">#E0E0E0</color>
+    <color name="movie_half_available">#20bf7a</color>
+    <color name="movie_tentofifty_available">#f0d003</color>
+    <color name="movie_select_seat_bottom_error_bg">#323232</color>
+    <color name="movie_separator">#1f000000</color>
+    <color name="movie_error">#8a000000</color>
+
+
+    <color name="send_positive_feedback">#80000000</color>
+    <color name="movie_order_summary_txt">#8a222222</color>
+    <color name="movie_booking_id_Txt">#8a000000</color>
+
+
+    <!--Required for smoothpay-->
+
+    <color name="payment_success_text_grey">@color/color_909090</color>
+
+    <color name="payment_success_line_grey">#EFEFEF</color>
+    <color name="light_grey_border">#f1f1f1</color>
+    <color name="payment_success_initials_blue">#5FC0FF</color>
+    <color name="flight_tab_select">@color/color_00b9f5</color>
+    <color name="flight_light_grey_disabled">#D2D2D2</color>
+    <color name="flight_review_nonstp">#B1B1B1</color>
+    <color name="flight_line_color">#ebebeb</color>
+    <color name="flight_review_flight_name">#323232</color>
+    <color name="flight_review_city">@color/color_909090</color>
+    <color name="flight_review_base_fare">#323232</color>
+    <color name="flight_sold_by">@color/color_909090</color>
+    <color name="cashback_color">#4EC91A</color>
+    <color name="green_teal">#06ac63</color>
+
+    <!-- Shadow color for the first pixels around CardView. -->
+    <color name="cardview_shadow_start_color">#A0A0A0</color>
+    <!-- Shadow color for the furthest pixels around CardView. -->
+    <color name="cardview_shadow_end_color">#A0A0A0</color>
+    <color name="movies_tab_Strip_yellow">#F4FA58</color>
+    <color name="order_summary_success">#de7ed321</color>
+    <color name="order_summary_failure">#e81010</color>
+    <color name="movie_tab_selected">#002e6e</color>
+    <color name="movie_long_press_message">@color/color_909090</color>
+    <color name="seller_link">@color/paytm_blue</color>
+    <color name="movie_seat_selection_black">@color/color_494949</color>
+    <color name="movie_conv_info_separator">#b9b9b9</color>
+    <color name="movie_cashback_color">@color/color_909090</color>
+    <color name="movie_seat_separator_bg">#ebebeb</color>
+    <color name="hotel_cashback_color">#7ED321</color>
+    <color name="movies_promo_text_color">@color/color_012b72</color>
+    <color name="movie_long_hint_txt">#426594</color>
+    <color name="movie_name_color">#002e6e</color>
+    <color name="hotel_filter_title_color">#787878</color>
+    <color name="movie_failed_status_background">#e24913</color>
+    <color name="movie_pending_status_background">#f5a618</color>
+
+    <color name="hotel_review_tab_select">@color/color_012b72</color>
+    <color name="hotel_review_tab_un_select">@color/color_909090</color>
+    <color name="hotel_review_tab_underline_select">@color/color_00b9f5</color>
+    <color name="heather">#b8c2cb</color>
+
+    <color name="payment_success_text_black">@color/color_494949</color>
+    <!--<color name="payment_success_text_grey">@color/color_909090</color>
+    <color name="payment_success_text_black">@color/color_494949</color>
+
+    <color name="payment_success_initials_blue">#5FC0FF</color>-->
+    <color name="passbook_payer_payee_name">#7B7B7B</color>
+
+
+    <!--BrowsePlan Page-->
+    <color name="tab_selected_color">#0a286d</color>
+    <color name="tab_unselected_color">@color/color_4a4a4a</color>
+
+    <!--brandstore Page-->
+    <color name="brandstore_tab_selected_color">@color/color_222222</color>
+    <color name="brandstore_tab_unselected_color">@color/color_666666</color>
+
+
+    <color name="blue_button_text">#0db9f5</color>
+
+
+    <color name="delete_options_text_color">@color/paytm_blue</color>
+
+    <color name="tab_title_selected_color">#1c2957</color>
+    <color name="blue_dot">@color/color_00b9f5</color>
+
+
+    <color name="passbook_calendar_blue_underline">#001D4D</color>
+    <color name="movie_censor_genre">#80ffffff</color>
+    <!--Required for smoothpay-->
+
+    <color name="train_classes_bg">#fbfbfb</color>
+    <color name="train_filter_tab_alpha">#18000000</color>
+    <color name="train_filter_text_color">@color/color_666666</color>
+    <color name="train_pnr_txt">#6f6f6f</color>
+    <color name="train_calender_header">#A9A9A9</color>
+    <color name="reservation_text_color">#929292</color>
+    <color name="cancel_button_color">#00B0DE</color>
+    <color name="increment_button_color">#E6E6E6</color>
+    <color name="traveller_bg_color">#FF3B00</color>
+    <color name="button_traveller_selected">#D2D2D2</color>
+    <color name="button_traveller">#f4f4f4</color>
+    <color name="train_search_time_color">#4F4F4F</color>
+    <color name="train_search_duration_color">#8F8F8F</color>
+    <color name="train_viewroute_color">#1FC0F1</color>
+    <color name="train_tab_divider">#E6E6E6</color>
+    <color name="full_name_color">#9b9b9b</color>
+    <color name="train_home_input_selected">#434343</color>
+
+    <color name="train_view_root_heading">#090909</color>
+    <color name="train_view_root_schedule">#9A9A9A</color>
+    <color name="train_itenarary_city_name">@color/color_4a4a4a</color>
+    <color name="train_itenarary_boarding">#757575</color>
+    <color name="train_itenarary_number_of_pass">#5C5C5C</color>
+    <color name="train_itenarary_WL">#F83F2D</color>
+    <color name="border_color">#E0E0E0</color>
+    <color name="color_available">#32bf7a</color>
+    <color name="color_waitlist">#F83F2c</color>
+    <color name="color_rac">#EEA43E</color>
+    <color name="color_closed">#3F3F3F</color>
+    <color name="color_view_earnings_progressbar">#3a95ff</color>
+    <color name="status_color">#64B44B</color>
+
+    <color name="train_origin_dest">#848484</color>
+    <color name="detail_label_color">#929292</color>
+    <color name="note_color">#9B9B9B</color>
+    <color name="irctc_text_color">#ABABAB</color>
+    <color name="mobile_number_color">#4B4B4B</color>
+    <color name="smooth_pay_circular">#e1e1e1</color>
+
+    <color name="row_gray">#919191</color>
+    <color name="row_orange">#FB9361</color>
+    <color name="just_tickets_open_seat_desc">@color/color_909090</color>
+    <color name="just_tickets_con_fee_desc">#20bf7a</color>
+    <color name="train_frm_andto_txt">#adadad</color>
+    <color name="train_city_search_value">#0a0a0a</color>
+
+    <color name="train_search_list_color">#0a0a0a</color>
+    <color name="train_search_list_sourc_name">#8c8c8c</color>
+    <color name="train_date_color">#484848</color>
+    <color name="train_add_extra_text_color">@color/color_00b9f5</color>
+    <color name="irctc_signup_heading_color">#adadad</color>
+    <color name="available_text_color">#32bf7a</color>
+    <color name="train_txt_gray">@color/color_909090</color>
+    <color name="train_iteneray_source_time">#0a0a0a</color>
+
+    <color name="week_header_color">@color/color_4a4a4a</color>
+    <color name="background_color">#f9f9f9</color>
+    <color name="departure_txt">@color/color_909090</color>
+    <color name="today_date_color">@color/color_012b72</color>
+    <color name="train_view_sep">@color/color_00b9f5</color>
+    <color name="green_train">#2EAD6F</color>
+    <color name="train_waitlist_color">#f66111</color>
+    <color name="train_regreat_color">#d0021b</color>
+    <color name="irctc_verification_error">#d0021b</color>
+    <color name="irctc_successfull_image">#32bf7a
+    </color>
+    <color name="trains_promo_error">#FE4343</color>
+
+    <color name="passenger_detail_line_background">#efefef
+    </color>
+    <color name="label_color">#adadad
+    </color>
+    <color name="saffran_offer_color">#f8631a</color>
+    <color name="flight_search_hint_text_color">@color/color_909090</color>
+    <color name="flight_header_bg_color">#aaf0f0f0</color>
+
+    <color name="divider_gray_space">#fff3f3f3</color>
+
+    <color name="text_color_smart_list_title">#000000</color>
+    <color name="address_default_text_string">#43c98f</color>
+
+    <color name="flight_timings">#323232</color>
+
+    <color name="flight_search_list_flight_name_color">#000000</color>
+    <color name="flight_review_date">#323232</color>
+    <color name="flight_review_airport_name">#323232</color>
+    <color name="flight_review_airport_complete_name">@color/color_909090</color>
+    <color name="change_address_text_color">@color/paytm_blue</color>
+    <color name="add_current_location_text_color">@color/color_494949</color>
+    <color name="actionbar_subtext_color">#9b9b9b</color>
+    <color name="flight_text_color">#adadad</color>
+    <color name="flight_city_color">@color/color_666666</color>
+    <color name="flight_tab_select_color">@color/color_012b72</color>
+    <color name="flight_tab_un_select_color">#0a0a0a</color>
+    <color name="flight_tab_divider_color">#c9c9c9</color>
+    <color name="flight_round_trip_from_to_color">#0a0a0a</color>
+    <!-- Events -->
+    <color name="event_seat_type_color">@color/color_012b72</color>
+    <color name="ampark_bg_card_color">#f6f6f6</color>
+    <color name="events_passenger_page_title_background">#DADADA</color>
+    <!--<color name="event_divider_color">#EFEFEF</color>-->
+    <color name="event_blue_color">@color/color_00b9f5</color>
+    <color name="events_normal_text_color">@color/color_494949</color>
+    <color name="event_seat_details_text_color">#191919</color>
+
+    <color name="event_sold_out_color">#E24913</color>
+    <color name="event_text_color_gray">#9B9B9B</color>
+    <color name="event_divider_color">#EBEBEB</color>
+    <color name="event_text_order_summary_color">#0A0A0A</color>
+    <color name="event_order_summary_desc_title_blue_color">#002E6E</color>
+    <color name="bus_default_color">@color/color_4a4a4a</color>
+
+
+    <color name="brand_widget_divider_color">#f0f0f0</color>
+    <color name="train_not_confirmed_otp">#FFBBF4D8</color>
+    <color name="black">#000000</color>
+    <color name="blue_add_money">#0a286d</color>
+    <color name="greyish_brown">@color/color_4a4a4a</color>
+    <color name="grayish_white">#ededed</color>
+
+    <color name="gray_color">@color/color_4a4a4a</color>
+    <color name="nps_least_value">#EB8A83</color>
+    <color name="nps_mid_value">#FFBA00</color>
+    <color name="nps_high_value">#A9D090</color>
+    <color name="flight_traveller_condition_bg_color">#FCEEEE</color>
+    <color name="flight_traveller_condition_border_color">#F4CDCD</color>
+    <color name="flight_traveller_condition_text_color">#987272</color>
+    <color name="flight_banner_promo_color">#F3F3F3</color>
+    <color name="travel_title_text_color">#1a2956</color>
+    <color name="instruction_bg">#fffada</color>
+
+    <color name="progress_bg">#1a00b8f5</color>
+
+    <color name="color_f2f7fc">#f2f7fc</color>
+
+    <color name="color_de000000">#de000000</color>
+    <color name="color_012b72">#012b72</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_909090">#909090</color>
+    <color name="color_0c2f3a">#0c2f3a</color>
+    <color name="color_0a0a0a">#0a0a0a</color>
+    <color name="color_494949">#494949</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_00b9f5">#00b9f5</color>
+    <color name="color_ebfaff">#ebfaff</color>
+    <color name="color_dcdcdc">#DCDCDC</color>
+    <color name="color_fd5c5c">#fd5c5c</color>
+    <color name="color_9c9c9c">#9c9c9c</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_ababab">#ababab</color>
+    <color name="color_efefef">#efefef</color>
+    <color name="color_9b9b9b">#9b9b9b</color>
+    <color name="color_00b3fa">#00b3fa</color>
+    <color name="color_8c8c8c">#8c8c8c</color>
+    <color name="color_4a4a4a">#4a4a4a</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_d2d2d2">#d2d2d2</color>
+    <color name="color_fffeeb">#FFFEEB</color>
+    <color name="color_009453">#009453</color>
+    <color name="color_b80d22">#b80d22</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_4b4b4b">#4B4B4B</color>
+    <color name="color_f7f9fa">#f7f9fa</color>
+    <color name="color_353535">#353535</color>
+    <color name="color_fc3507">#fc3507</color>
+    <color name="color_9d9d9d">#9d9d9d</color>
+    <color name="color_1cd0011b">#1cd0011b</color>
+    <color name="color_d0011b">#d0011b</color>
+    <color name="color_fffad1">#fffad1</color>
+    <color name="color_adadad">#adadad</color>
+    <color name="color_d5d5d5">#D5D5D5</color>
+    <color name="color_c13100">#C13100</color>
+    <color name="color_dadada">#dadada</color>
+    <color name="color_8D8D8D">#8D8D8D</color>
+    <color name="movie_offline_img_color">#d8d8d8</color>
+    <color name="movie_fnb_background">#70000000</color>
+    <color name="action_msg_color">@color/color_666666</color>
+    <color name="color_f6a108">#F6A108</color>
+    <color name="color_09ac63">#09AC63</color>
+    <color name="color_f6a623">#f6a623</color>
+    <color name="pdp_price_field">#20bf7a</color>
+    <color name="pdp_discount_field">#f8631a</color>
+    <color name="pdp_view_divider">#f8f8f8</color>
+    <color name="grid_discount">#fa7d40</color>
+    <color name="grid_product_name">@color/color_494949</color>
+    <color name="product_option_background">#f4f4f4</color>
+    <color name="grid_sort_item_name">@color/color_666666</color>
+    <color name="home_actual_price">#9c9c9c</color>
+    <color name="home_item_divider">#f4f4f4</color>
+    <color name="grid_sort_item_title">#333333</color>
+    <color name="color_fdfbdc">#fdfbdc</color>
+
+    <!-- Nearby Color -->
+    <color name="color_nearby_toolbar_title">@color/color_222222</color>
+    <color name="color_nearby_title_divider">#CCCCCC</color>
+    <color name="color_nearby_selected_tab">@color/color_222222</color>
+    <color name="color_nearby_unselected_tab">@color/color_4a4a4a</color>
+    <color name="color_nearby_divider">#F4F4F4</color>
+    <color name="color_nearby_call_action">#028C48</color>
+    <color name="color_nearby_need_help_border">#979797</color>
+    <color name="color_nearby_need_help">@color/color_666666</color>
+    <color name="off_white">#33ffffff</color>
+    <color name="faded_white">#CCffffff</color>
+    <color name="brownish_grey">@color/color_666666</color>
+    <color name="bright_sky_blue">@color/color_00b9f5</color>
+    <color name="black_balance">@color/color_222222</color>
+    <color name="black_opacity">#88000000</color>
+
+    <color name="white_grey">#f4f4f4</color>
+    <color name="gray_normal_android">#f7f7f7</color>
+    <color name="white_two">#ebebeb</color>
+
+    <color name="gift_filter_bg_color">#f4f4f4</color>
+
+    <!--CST colors-->
+    <color name="cst_orderlist_tab_text_select">#21346b</color>
+    <color name="cst_orderlist_tab_text_un_select">@color/color_4a4a4a</color>
+    <color name="cst_orderlist_tab_underline_select">@color/color_00b9f5</color>
+    <color name="cst_order_select_txt_color">#00b8f8</color>
+    <color name="silver">#c8c6cc</color>
+    <color name="grey_phone">@color/color_999999</color>
+    <color name="new_white_two">#f4f4f4</color>
+    <color name="gray_shade1">#9E9797</color>
+    <color name="cst_order_status_color">#9c9c9c</color>
+    <color name="cst_order_date_color">@color/color_999999</color>
+    <color name="cst_order_sub_title_color">@color/color_909090</color>
+    <color name="cst_recent_order_title_color">@color/color_494949</color>
+    <color name="cst_recent_order_view_all_color">@color/color_00b9f5</color>
+    <color name="cst_recent_order_price_color">@color/color_4a4a4a</color>
+    <color name="cst_recent_order_transaction_color">@color/color_494949</color>
+    <color name="cst_recent_order_time_booking_color">#9c9c9c</color>
+    <color name="order_success_color">#20bf7a</color>
+    <color name="order_failure_color">#fd5c5c</color>
+
+    <color name="hotel_plus_minus_color">#00aff7</color>
+    <color name="hotel_plus_minus_color_disable">#8000aef7</color>
+
+
+    <color name="widget_labelled_spinner_default">#6D6D6D</color>
+    <color name="widget_labelled_spinner_error">#FFDD2C00</color>
+    <color name="movie_dark_green">#54ac72</color>
+    <color name="movie_light_green">#91d1af</color>
+    <color name="movie_yellow">#f0d768</color>
+    <color name="movie_copper">#e0936a</color>
+    <color name="movie_hunter">#af4e52</color>
+    <!--CST new colors -->
+    <color name="cst_heading_color">@color/color_222222</color>
+    <color name="cst_tap_to_download_text_color">@color/color_00b9f5</color>
+    <color name="cst_previous_messages_text_color">#00b8f5</color>
+    <color name="cst_issue_messages_divider_color">#d5d5d5</color>
+    <color name="cst_issue_image_circle_color">#ededed</color>
+    <color name="cst_issue_detail_sub_title_color">@color/color_494949</color>
+    <color name="color_7b7b7b">#7b7b7b</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_212121">#212121</color>
+    <color name="cst_issue_status_color_failed">#f8631a</color>
+    <color name="color_999999">#999999</color>
+    <color name="gray_bg">#f3f3f3</color>
+    <color name="color_989898">#989898</color>
+    <color name="color_e0e0e0">#e0e0e0</color>
+
+    <!-- Accordion View -->
+    <color name="accordion_category_text_color">@color/color_222222</color>
+
+    <color name="tp_gray_font">@color/color_4a4a4a</color>
+    <color name="tp_gray_font_2">#9b9b9b</color>
+    <color name="tp_gray_line">#ebebeb</color>
+    <color name="tp_gray_line_1">#e9e9e9</color>
+    <color name="tp_gray_line_2">#efefef</color>
+    <color name="tp_orange">#F7E2BC</color>
+    <color name="tp_light_yellow">#fffada</color>
+    <color name="tp_separators">#cccccc</color>
+    <color name="tp_red">#d0021b</color>
+    <color name="tp_button_blue">@color/color_00b9f5</color>
+    <color name="tp_round_shape_green">#20bf7a</color>
+    <color name="signin_error_msg_bg">#fdfbd3</color>
+    <color name="warm_grey_two">#989898</color>
+    <color name="uber_dark_blue">#09091a</color>
+    <color name="white_90">#E6ffffff</color>
+
+    <color name="color_f1f6fc">#f1f6fc</color>
+    <color name="color_f4cece">#fcefef</color>
+
+    <color name="color_20bf7a">#20bf7a</color>
+    <color name="color_b2eafc">#b2eafc</color>
+    <color name="color_eaeaea">#eaeaea</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_ebfbff">#ebfbff</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="gold_transaction_title">@color/color_222222</color>
+    <color name="gold_transaction_time">@color/color_999999</color>
+    <color name="more_sellers_bg">#f4f4f4</color>
+    <color name="sellers_availability_color">@color/color_222222</color>
+    <color name="change_pin_txt_color">#ef4e28</color>
+    <color name="more_seller_sort_by">@color/color_666666</color>
+    <color name="more_sort_txt_color">@color/color_222222</color>
+    <color name="color_f2fbf7">#f2fbf7</color>
+    <color name="color_ef4e28">#ef4e28</color>
+    <color name="choose_seller_delivery">#1a1a1a</color>
+    <color name="pdp_new_actual_price">#bdbdbd</color>
+    <color name="color_deeaee">#deeaee</color>
+    <color name="gold_history_tab_text_select">#00b9f5</color>
+    <color name="gold_gift_title">@color/color_222222</color>
+    <color name="link_color">#339c90</color>
+    <color name="color_e74b2">#e74b24</color>
+    <color name="seller_filter_chkbx_brdr">#d6d6d6</color>
+    <color name="issue_green">#69D0AF</color>
+    <color name="very_light_blue">#e2ebee</color>
+    <color name="very_light_grey">#fafafa</color>
+
+    <color name="color_444444">#444444</color>
+    <color name="color_e8f1f4">#e8f1f4</color>
+
+    <color name="upi_card_bg">#f3f7f8</color>
+    <color name="upi_card_stroke">#e8f1f4</color>
+    <color name="upi_pin_green">#21c17a</color>
+    <color name="upi_pin_red">#fd5c5c</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_e74b24">#e74b24</color>
+    <color name="color_fa6565">#fa6565</color>
+    <color name="background_tab">#66fa6565</color>
+
+    <color name="item_detail_name_text_color">@color/color_222222</color>
+    <color name="item_detail_item_info_text_color">@color/color_909090</color>
+    <color name="item_detail_dlvry_address_text_color">@color/color_666666</color>
+    <color name="item_detail_sold_by_text_color">#1a1a1a</color>
+    <color name="item_detail_contact_seller_text_color">#00b8f5</color>
+    <color name="item_detail_promo_text_color">@color/color_012b72</color>
+    <color name="item_detail_auto_cancelled_item_desc_text_color">@color/color_222222</color>
+    <color name="item_detail_auto_cancelled_date_text_color">@color/color_909090</color>
+    <color name="item_detail_auto_cancelled_separator_color">#ebebeb</color>
+    <color name="item_detail_auto_cancelation_reason_text_color">@color/color_4a4a4a</color>
+    <color name="item_detail_auto_cancelation_bg_color">#fa6565</color>
+    <color name="item_detail_auto_cancel_separator_bg_color">#ebebeb</color>
+    <color name="item_detail_refund_desc_text_color">@color/color_222222</color>
+    <color name="item_detail_refund_amnt_text_color">@color/color_666666</color>
+    <color name="item_detail_refund_details_text_color">#00b9f5</color>
+    <color name="item_detail_refund_source_text_color">@color/color_222222</color>
+    <color name="item_detail_refund_time_text_color">#9b9b9b</color>
+
+    <!-- Item details -->
+
+    <!-- Item Status -->
+    <color name="item_action_button_border_color">#00b8f5</color>
+    <color name="item_status_small_circle_color">#dfdfdf</color>
+    <color name="item_status_greenish_color">#20bf7a</color>
+    <color name="item_status_redish_color">#fa6565</color>
+
+    <color name="delivered_item_text_bg_color">#20BF7A</color>
+    <color name="return_replace_clr">#00B9F5</color>
+
+    <!-- Merchant Details -->
+    <color name="merchant_details_separator_color">#e8e8e8</color>
+    <color name="merchant_phone_num_color">@color/color_666666</color>
+
+    <color name="return_step_ctr_text_color">@color/color_4a4a4a</color>
+    <color name="return_step_heading_text_color">@color/color_4a4a4a</color>
+    <color name="return_step_subtitle_text_color">#989898</color>
+    <color name="lyt_default_color">#eeeeee</color>
+    <color name="extend_dispatch_arrow_view_color">#dddddd</color>
+
+    <color name="item_cards_seperator_bg">#f4f4f4</color>
+
+    <color name="seller_address_heading_color">@color/color_222222</color>
+    <color name="seller_address_complete_color">@color/color_909090</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_e2ebee">#e2ebee</color>
+    <color name="color_fa5b91">#fa5b91</color>
+
+
+    <color name="excl_color_00b9f5">#00b9f5</color>
+    <color name="color_1eef4e28">#1eef4e28</color>
+    <color name="color_5eef4e28">#5eef4e28</color>
+    <color name="color_b9b9b9">#b9b9b9</color>
+    <color name="pale_grey">#e8f1f4</color>
+    <color name="radi_unselected_grey">#8b8b8b</color>
+    <color name="line_color">#5eef4e28</color>
+    <color name="inside_color">#1eef4e28</color>
+    <color name="color_5b62fa">#5b62fa</color>
+    <color name="color_b8c2cb">#b8c2cb</color>
+    <color name="black_transparent">#aa000000</color>
+    <color name="color_fafbfb">#fafbfb</color>
+    <color name="color_5b8efa">#5b8efa</color>
+
+    <!--//postcard-->
+    <color name="color_postcard_theme1">#00b9f5</color>
+    <color name="color_postcard_theme2">#62a2ef</color>
+    <color name="color_postcard_theme3">#ffbdab</color>
+    <color name="color_postcard_theme4">#00c5cf</color>
+    <color name="color_postcard_theme5">#455d8f</color>
+
+
+    <color name="color_0076ff">#0076ff</color>
+    <color name="color_f3f7f8">#f3f7f8</color>
+    <color name="color_8f8e94">#8f8e94</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_313f48">#313f48</color>
+    <color name="color_3989e9">#3989E9</color>
+    <color name="color_4fb4ec">#4FB4EC</color>
+    <color name="color_00256b">#00256b</color>
+    <color name="dummy_items_background">#ebebeb</color>
+
+    <color name="warm_grey">@color/color_999999</color>
+    <color name="color_e2e2e2">#e2e2e2</color>
+    <color name="cart_transcluscent_black">#40000000</color>
+    <color name="pdp_toolbar_white_transparent">#E6FFFFFF</color>
+
+    <color name="edittext_background">#f3f7f8</color>
+
+    <!-- CC/DC expanded layout -->
+    <color name="color_cc_dc_enter_background">#f4f8f9</color>
+    <color name="color_fdfbd3">#fdfbd3</color>
+    <color name="cnap_title_text_color">@color/color_012b72</color>
+    <color name="cnap_title_background">#ebfaff</color>
+    <color name="cnap_message_text_color">#444444</color>
+    <color name="cnap_know_more_text_color">#00b9f5</color>
+    <color name="aprb_button_boder">#00b9f5</color>
+    <color name="aprb_text">@color/color_222222</color>
+    <color name="aprb_message_text">#333333</color>
+    <color name="apsc_title_text">@color/color_222222</color>
+    <color name="apsc_message_text">#333333</color>
+    <color name="apsc_feedback_text">#00b9f5</color>
+    <color name="apsc_item_category_text">#333333</color>
+    <color name="fscl_add_card_text">#00b9f5</color>
+    <color name="assc_link_text">@color/color_222222</color>
+    <color name="assc_link_message_text">#333333</color>
+    <color name="paytm_automatic_banner_background">#ebfaff</color>
+    <color name="marine_blue">@color/color_012b72</color>
+    <color name="greyish_brown_two">#444444</color>
+    <color name="ice_blue">#ebfaff</color>
+    <color name="assc_title_text">@color/color_222222</color>
+    <color name="assc_subscription_name_text">@color/color_222222</color>
+    <color name="assc_subscription_vendor_text">@color/color_222222</color>
+    <color name="assc_text">@color/color_222222</color>
+    <color name="assc_info_text">#333333</color>
+    <color name="shine_blue">#d8f6ff</color>
+
+    <color name="color_f5f8f9">#f5f8f9</color>
+    <color name="color_cart_product_name">@color/color_222222</color>
+    <color name="color_cart_item_original_price">@color/color_666666</color>
+    <color name="color_fde9e5">#fde9e5</color>
+    <color name="installation_number">#00b9f5</color>
+    <color name="post_payment_success">#09ac63</color>
+    <color name="post_payment_pending">#ff9c56</color>
+    <color name="post_payment_failure">#fd5c5c</color>
+    <color name="grid_divider">#EBEBEB</color>
+    <color name="mall_grey_bg">#f4f4f4</color>
+    <color name="tomato">#ef4e28</color>
+    <color name="radio_color">#cecece</color>
+    <color name="tomato_opacity">#26ef4e28</color>
+    <color name="defualt_address_text_color">#43c98f</color>
+    <color name="lucky_lifafa_footer_bg_color">#f5feff</color>
+
+    <color name="color_001d4d">#001d4d</color>
+    <color name="color_f1f1f1">#F1F1F1</color>
+
+    <color name="color_3062ad">#3062ad</color>
+    <color name="color_2f62ad">#2f62ad</color>
+    <color name="color_ffa400">#ffa400</color>
+    <color name="color_21c17a">#21c17a</color>
+
+    <color name="toll_green">#21c17a</color>
+    <color name="toll_orange">#ffa400</color>
+    <color name="toll_red">#fd5c5c</color>
+    <color name="color_e5f8fe">#e5f8fe</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_2d2d2d">#2d2d2d</color>
+
+    <color name="utility_automatic_list_item_enabled">#21c17a</color>
+    <color name="color_ef428">#EF4E28</color>
+    <color name="gray_mask">#F1F1F1</color>
+    <color name="utility_automatic_list_item_disabled">#ffa400</color>
+    <color name="base_metro_title_text">#222222</color>
+    <color name="amt_title_text">#222222</color>
+    <color name="metro_selection_operator_title_text">#222222</color>
+    <color name="amti_source_destination_text">#222222</color>
+    <color name="amti_ticket_info">#444444</color>
+    <color name="amti_validity">#222222</color>
+    <color name="color_6f6f6f">#6f6f6f</color>
+
+    <color name="anchor_tag_bg">#ffe9c1</color>
+    <color name="anchor_border_color">#ffc660</color>
+    <color name="offline_pg_pay_button_color">#00b9f5</color>
+    <color name="offline_pg_bg_status_color">#F5F7F9</color>
+    <color name="shadow">#07000000</color>
+    <color name="bus_refund_pending_color">#fd5c5c</color>
+    <color name="bus_refund_success_color">#21c17a</color>
+    <color name="jr_color_metro_expired">#fd5c5c</color>
+    <color name="metro_ticket_purchase_tnc_text">#00b9f5</color>
+    <color name="jr_color_metro_issues_divider">#ebebeb</color>
+    <color name="jr_color_metro_status_success">#09ac63</color>
+    <color name="jr_color_metro_status_pending">#f8631a</color>
+    <color name="jr_color_metro_status_failed">#fd5c5c</color>
+    <color name="metro_tciket_purchase_tnc_text">#00b9f5</color>
+    <color name="egg_shell">#fdfbd3</color>
+    <color name="deep_sky_blue">#00b9f5</color>
+    <color name="recent_sub_title">#222222</color>
+
+    <color name="pollution_hazardous">#740000</color>
+    <color name="pollution_very_unhealthy">#7f3fad</color>
+    <color name="pollution_unhealthy">#e43636</color>
+    <color name="pollution_unhealthy_sensitive">#ff8d00</color>
+    <color name="pollution_moderate">#ffdb00</color>
+    <color name="pollution_good">#21c17a</color>
+
+    <color name="pollution_lyt_hazardous">#0c740000</color>
+    <color name="pollution_lyt_very_unhealthy">#0c7f3fad</color>
+    <color name="pollution_lyt_unhealthy">#0ce43636</color>
+    <color name="pollution_lyt_unhealthy_sensitive">#14f68917</color>
+    <color name="pollution_lyt_moderate">#0cffdb00</color>
+    <color name="pollution_lyt_good">#0c21c17a</color>
+
+    <color name="dark_black">#000000</color>
+    <color name="movie_lessthanten_available">#e25541</color>
+    <color name="movie_theatre_name">#de000000</color>
+    <color name="movie_language_color">#8f000000</color>
+    <color name="search_view_hint_movies">#54000000</color>
+    <color name="movie_location_txt">#de000000</color>
+    <color name="movies_sesion_timeout_red">#B5091F</color>
+    <color name="movie_area_description_color">#002e6e</color>
+    <color name="movie_screen_this_way_bg">#fafafa</color>
+    <color name="movie_seat_ff_sub_text_color">#909090</color>
+    <color name="movie_location_bgrd">#e8e8e8</color>
+    <color name="event_text_color_black">#000000</color>
+    <color name="bood_beverage_flex_ticket_book">#828282</color>
+    <color name="events_traveller_form_text_field_color">#7B7B7B</color>
+    <color name="event_booking_background_color">#FAFAFA</color>
+    <color name="event_text_gray_color">#909090</color>
+    <color name="blue_extra_light">#c9e8f2</color>
+    <color name="gstin_head_color">#666666</color>
+    <color name="gstin_value_color">#222222</color>
+    <color name="new_gstin_head_color">#222222</color>
+    <color name="heart_primary_color">#da4439</color>
+    <color name="heart_secondary_color">#8a098c</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_3063ad">#3063ad</color>
+    <color name="green_fare_alert">#00b15e</color>
+    <color name="title_blue">#20336b</color>
+    <color name="badge_blue">#233564</color>
+    <color name="pale_peach">#ffe9c1</color>
+    <color name="movie_bird_view_bg">#24395B</color>
+    <color name="color_50_222222">#80222222</color>
+    <color name="color_50_444444">#80444444</color>
+    <color name="color_e7eef1">#e7eef1</color>
+    <color name="color_fdfdfd">#fdfdfd</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="color_ff191919">#FF191919</color>
+    <color name="color_d6d6d6">#d6d6d6</color>
+    <color name="text_color_grey">#f1ecec</color>
+    <color name="color_status_bar">#f3f7f8</color>
+    <color name="color_00b8f8">#00b8f8</color>
+    <color name="c8c7cc">#c8c7cc</color>
+    <color name="orange_tomato_color">#ef4e28</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_pdp_headers">#222222</color>
+    <color name="light_sage">#e2f7ee</color>
+    <!-- Cart Address color-->
+    <color name="address_bg">#ecf2f3</color>
+    <color name="cart_promo_bg_color">#ecf2f3</color>
+    <color name="color_bcbcbc">#BCBCBC</color>
+    <color name="bg_strock">#c3d0d2</color>
 </resources>

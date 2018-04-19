@@ -7,7 +7,6 @@ import com.android.volley.ParseError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.HttpHeaderParser;
-import com.example.sarthaktaneja.moviebuff.Pojo;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
@@ -29,7 +28,6 @@ public class GsonRequest extends Request<Object> {
         super(method, url, errorListenerlistener);
         Log.d("-------------", "GsonRequest: url"+url);
         this.clazz = model;
-        this.headers = headers;
         this.listener = listener;
     }
 

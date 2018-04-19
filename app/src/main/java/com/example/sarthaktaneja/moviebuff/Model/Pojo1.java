@@ -1,4 +1,4 @@
-package com.example.sarthaktaneja.moviebuff;
+package com.example.sarthaktaneja.moviebuff.Model;
 
 /**
  * Created by sarthaktaneja on 17/4/18.

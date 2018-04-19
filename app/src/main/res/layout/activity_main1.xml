@@ -6,7 +6,10 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/recycler_view">
+        android:id="@+id/recycler_view"
+        android:padding="20dp"
+        android:background="@drawable/gradient"
+        android:visibility="invisible">
     </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
