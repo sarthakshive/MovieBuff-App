@@ -16,9 +16,15 @@
         android:textColor="@color/color_3062ad"/>
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="200dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/icon_error"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
         android:src="@drawable/icon_error"/>
 
 </android.support.v7.widget.Toolbar>
