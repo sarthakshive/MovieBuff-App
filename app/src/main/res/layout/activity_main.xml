@@ -19,7 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
-        android:padding="10dp"
         android:background="@drawable/rounded_corner_search"
 
         >
@@ -30,10 +29,12 @@
             android:layout_height="wrap_content"
             android:hint="@string/search"
             android:textAlignment="center"
-            android:layout_marginTop="5dp"
             android:textColor="@color/colorPrimaryDark"
             android:backgroundTint="@android:color/transparent"
             android:textCursorDrawable="@null"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
            />
 
     </RelativeLayout>
@@ -52,13 +53,13 @@
 
     <ImageView
         android:id="@+id/search_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="9dp"
-        android:layout_marginTop="60dp"
-        android:padding="10dp"
+        android:layout_marginTop="65dp"
         android:src="@drawable/search_icon" />
 
 

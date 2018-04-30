@@ -4,21 +4,27 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/action_msg_color"
+    android:background="@color/metro_selection_operator_title_text"
     android:minHeight="@dimen/abc_action_bar_default_height_material">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
-        android:textColor="@color/color_3062ad"/>
+        android:textColor="@color/color_3062ad"
+        android:textStyle="bold"/>
 
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="200dp"
-        android:src="@drawable/icon_error"/>
+        android:src="@drawable/wishlist"
+        android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
 
 </android.support.v7.widget.Toolbar>

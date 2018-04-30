@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sarthaktaneja.moviebuff.Main2Activity"
-    android:id="@+id/mdp">
+    android:id="@+id/mdp"
+    android:orientation="horizontal">
 
     <include layout="@layout/toolbar1"
         android:layout_width="match_parent"

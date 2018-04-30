@@ -4,6 +4,8 @@ package com.example.sarthaktaneja.moviebuff.Model;
  * Created by sarthaktaneja on 17/4/18.
  */
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.PrimaryKey;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
@@ -20,12 +22,14 @@ public class Pojo1 implements Serializable{
     private Integer voteCount;
     @SerializedName("id")
     @Expose
+    @PrimaryKey
     private Integer id;
     @SerializedName("video")
     @Expose
     private Boolean video;
     @SerializedName("vote_average")
     @Expose
+    @ColumnInfo(name = "rating")
     private Double voteAverage;
     @SerializedName("title")
     @Expose
@@ -41,6 +45,7 @@ public class Pojo1 implements Serializable{
     private String originalLanguage;
     @SerializedName("original_title")
     @Expose
+    @ColumnInfo(name = "movie_name")
     private String originalTitle;
     @SerializedName("genre_ids")
     @Expose

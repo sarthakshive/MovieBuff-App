@@ -27,6 +27,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.DetailVi
         this.context = context;
     }
 
+
     public class DetailViewHolder extends RecyclerView.ViewHolder {
         TextView title;
         TextView rating;
@@ -38,8 +39,8 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.DetailVi
             rating = (TextView) itemView.findViewById(R.id.recyclerating);
             movieimg = (ImageView) itemView.findViewById(R.id.image);
         }
-
     }
+
 
     @Override
     public DetailViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
