@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -25,14 +24,13 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.example.sarthaktaneja.moviebuff.Database.Movie;
 import com.example.sarthaktaneja.moviebuff.Database.MovieDatabase;
+import com.example.sarthaktaneja.moviebuff.Database.MyAsync;
 import com.example.sarthaktaneja.moviebuff.Model.Pojo;
+import com.example.sarthaktaneja.moviebuff.Model.Pojo1;
 import com.example.sarthaktaneja.moviebuff.RecyclerView.RecycleAdapter;
 import com.example.sarthaktaneja.moviebuff.network.GsonRequest;
 import com.example.sarthaktaneja.moviebuff.network.VolleyQueue;
-
-import java.net.InetAddress;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -42,13 +40,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
     String value;
     private RecyclerView recyclerView;
     private RecycleAdapter recycleAdapter;
-    private RecycleAdapter recycleAdapter1;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initUI();
+    }
+
+    private void initUI() {
         search = (EditText) findViewById(R.id.search);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         button = (ImageView) findViewById(R.id.search_icon);
@@ -69,13 +70,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 return false;
             }
         });
-        MovieDatabase mdb= Room.databaseBuilder(getApplicationContext(),MovieDatabase.class,"Movie-Database").build();
     }
 
-    private static Movie addMovie(final MovieDatabase mdb, Movie movie)
-    {
-        mdb.movieDao().insertAll(movie);
-    }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {

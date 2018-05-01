@@ -5,6 +5,7 @@ package com.example.sarthaktaneja.moviebuff.Model;
  */
 
 import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -15,6 +16,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.List;
 
+@Entity
 public class Pojo1 implements Serializable{
 
     @SerializedName("vote_count")
@@ -47,12 +49,8 @@ public class Pojo1 implements Serializable{
     @Expose
     @ColumnInfo(name = "movie_name")
     private String originalTitle;
-    @SerializedName("genre_ids")
-    @Expose
-    private List<Integer> genreIds = null;
-    @SerializedName("backdrop_path")
-    @Expose
-    private Object backdropPath;
+
+
     @SerializedName("adult")
     @Expose
     private Boolean adult;
@@ -133,22 +131,6 @@ public class Pojo1 implements Serializable{
 
     public void setOriginalTitle(String originalTitle) {
         this.originalTitle = originalTitle;
-    }
-
-    public List<Integer> getGenreIds() {
-        return genreIds;
-    }
-
-    public void setGenreIds(List<Integer> genreIds) {
-        this.genreIds = genreIds;
-    }
-
-    public Object getBackdropPath() {
-        return backdropPath;
-    }
-
-    public void setBackdropPath(Object backdropPath) {
-        this.backdropPath = backdropPath;
     }
 
     public Boolean getAdult() {
