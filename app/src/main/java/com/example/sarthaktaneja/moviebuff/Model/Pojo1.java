@@ -16,7 +16,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.List;
 
-@Entity
+
 public class Pojo1 implements Serializable{
 
     @SerializedName("vote_count")
@@ -24,14 +24,12 @@ public class Pojo1 implements Serializable{
     private Integer voteCount;
     @SerializedName("id")
     @Expose
-    @PrimaryKey
     private Integer id;
     @SerializedName("video")
     @Expose
     private Boolean video;
     @SerializedName("vote_average")
     @Expose
-    @ColumnInfo(name = "rating")
     private Double voteAverage;
     @SerializedName("title")
     @Expose

@@ -21,25 +21,28 @@
         android:id="@+id/appname" />
 
     <ImageView
-        android:id="@+id/error"
+        android:id="@+id/heart"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_toLeftOf="@id/save"
+        android:layout_toLeftOf="@id/line"
         android:src="@drawable/wishlist"
+        android:padding="10dp"
         />
 
         <View
+            android:id="@+id/line"
             android:layout_width="2dp"
             android:layout_height="40dp"
             android:background="@color/account_separtor_txt"
-            android:layout_toStartOf="@id/save" />
+            android:layout_toStartOf="@id/notify" />
 
     <ImageView
-        android:id="@+id/save"
+        android:id="@+id/notify"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/notifications"
         android:layout_alignParentRight="true"
+        android:padding="10dp"
         />
 
     </RelativeLayout>

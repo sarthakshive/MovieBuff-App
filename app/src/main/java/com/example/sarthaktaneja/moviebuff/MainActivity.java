@@ -37,6 +37,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public final String TAG = "MyTag";
     EditText search;
     ImageView button;
+    ImageView heart;
     String value;
     private RecyclerView recyclerView;
     private RecycleAdapter recycleAdapter;
@@ -57,6 +58,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(recycleAdapter);
+        heart=(ImageView) findViewById(R.id.heart);
         RecyclerView.LayoutManager layoutManager1 = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(layoutManager1);
         button.setOnClickListener(this);
@@ -89,12 +91,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
-        if (isOnline()==true) {
-            networkRequest();
-        }
-        else
-        {
-            Toast.makeText(MainActivity.this, "You are not connected to Internet", Toast.LENGTH_SHORT).show();
+        switch (view.getId()) {
+            case R.id.search_icon:
+
+            if (isOnline() == true) {
+                networkRequest();
+            } else {
+                Toast.makeText(MainActivity.this, "You are not connected to Internet", Toast.LENGTH_SHORT).show();
+
+            }
+            break;
+
+            case R.id.heart:
 
         }
     }
