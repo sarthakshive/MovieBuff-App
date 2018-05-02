@@ -1,9 +1,7 @@
 package com.example.sarthaktaneja.moviebuff;
 
 import android.app.Activity;
-import android.arch.persistence.room.Room;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -24,13 +22,14 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.example.sarthaktaneja.moviebuff.Database.Movie;
 import com.example.sarthaktaneja.moviebuff.Database.MovieDatabase;
-import com.example.sarthaktaneja.moviebuff.Database.MyAsync;
 import com.example.sarthaktaneja.moviebuff.Model.Pojo;
-import com.example.sarthaktaneja.moviebuff.Model.Pojo1;
 import com.example.sarthaktaneja.moviebuff.RecyclerView.RecycleAdapter;
 import com.example.sarthaktaneja.moviebuff.network.GsonRequest;
 import com.example.sarthaktaneja.moviebuff.network.VolleyQueue;
+
+import java.util.List;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -46,7 +45,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initUI();
     }
 
@@ -103,7 +101,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
             break;
 
             case R.id.heart:
+                List<Movie> list = displayMovie();
 
+                break;
         }
     }
 
@@ -115,6 +115,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } else {
             return false;
         }
+    }
+
+    private List<Movie> displayMovie() {
+        MovieDatabase mdb=null;
+        return mdb.movieDao().getAll();
     }
 
 

@@ -21,10 +21,10 @@ public class Main2Activity extends Activity  {
         setContentView(R.layout.activity_main3);
         ImageView img = (ImageView) findViewById(R.id.movie_photo);
         ImageView wish=(ImageView) findViewById(R.id.heart);
-        final MovieDatabase mdb= Room.databaseBuilder(getApplicationContext(),MovieDatabase.class,"Movie-Database").build();
+        final MovieDatabase mdb= Room.databaseBuilder(getApplicationContext(),MovieDatabase.class,"Movie").build();
 
-        MyAsync myTask=new MyAsync(this);
-        myTask.execute(mdb,new Pojo1());
+
+
 
         Pojo1 pojo1= (Pojo1) getIntent().getSerializableExtra("Object");
 
@@ -34,19 +34,22 @@ public class Main2Activity extends Activity  {
         wish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addMovie(mdb,movie);
+                try {
+                    final MyAsync myTask=new MyAsync(Main2Activity.this);
+                    myTask.execute(mdb,movie);
+                }
+                catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
                 Toast.makeText(Main2Activity.this, "Added to Database", Toast.LENGTH_SHORT).show();
             }
         });
-        wish.setTag(movie);
-       final MovieDatabase db;
         }
 
-
-        private Movie addMovie(MovieDatabase mdb, Movie movie) {
-
-        mdb.movieDao().insertAll(movie);
-        return movie;
-    }
+//        private Movie addMovie(MovieDatabase mdb, Movie movie) {
+//        mdb.movieDao().insertAll(movie);
+//        return movie;
+//    }
 
 }

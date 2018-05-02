@@ -15,6 +15,35 @@ public class Movie {
         rating=pojo1.getVoteAverage();
     }
 
+    Movie()
+    {
+
+    }
+
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
     @PrimaryKey(autoGenerate = true)
     private int uid;
 

@@ -18,7 +18,7 @@ public class MyAsync extends AsyncTask<Object,Void,Boolean> {
         this.context=context;
     }
 
-    private boolean addMovie(MovieDatabase mdb, Movie movie)
+    public boolean addMovie(MovieDatabase mdb, Movie movie)
     {
         mdb.movieDao().insertAll(movie);
         return true;

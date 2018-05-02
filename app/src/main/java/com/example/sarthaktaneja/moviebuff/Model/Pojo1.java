@@ -3,10 +3,6 @@ package com.example.sarthaktaneja.moviebuff.Model;
 /**
  * Created by sarthaktaneja on 17/4/18.
  */
-
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
@@ -45,7 +41,6 @@ public class Pojo1 implements Serializable{
     private String originalLanguage;
     @SerializedName("original_title")
     @Expose
-    @ColumnInfo(name = "movie_name")
     private String originalTitle;
 
 
