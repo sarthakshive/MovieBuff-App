@@ -10,6 +10,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -30,6 +32,8 @@ import com.example.sarthaktaneja.moviebuff.network.GsonRequest;
 import com.example.sarthaktaneja.moviebuff.network.VolleyQueue;
 
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -70,6 +74,33 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 return false;
             }
         });
+        search.addTextChangedListener(
+                new TextWatcher() {
+                    @Override public void onTextChanged(CharSequence s, int start, int before, int count) {
+                        networkRequest();
+                    }
+
+                    @Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+                    private Timer timer = new Timer();
+                    private final long DELAY = 500; // milliseconds
+
+                    @Override
+                    public void afterTextChanged(final Editable s) {
+//                        timer.cancel();
+//                        timer = new Timer();
+//                        timer.schedule(
+//                                new TimerTask() {
+//                                    @Override
+//                                    public void run() {
+//                                        networkRequest();
+//                                    }
+//                                },
+//                                DELAY
+//                        );
+                    }
+                }
+        );
     }
 
 
@@ -182,6 +213,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
     }
+
+
 
 
 }
