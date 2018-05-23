@@ -5,17 +5,33 @@
     android:padding="20dp"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loader_image">
+
     <ImageView
         android:layout_width="160dp"
         android:layout_height="250dp"
         android:id="@+id/image"
         android:src="@mipmap/ic_launcher"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_loader"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rotate"
+            />
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recyclename"
-        android:layout_below="@id/image"
+        android:layout_below="@id/loader_image"
         android:fontFamily="sans-serif"
         android:textSize="18sp"
         />

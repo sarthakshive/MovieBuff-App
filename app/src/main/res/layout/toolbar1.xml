@@ -4,7 +4,6 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/metro_selection_operator_title_text"
     android:minHeight="@dimen/abc_action_bar_default_height_material">
     <RelativeLayout
     android:layout_width="match_parent"
@@ -18,7 +17,8 @@
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/color_3062ad"
         android:textStyle="bold"
-        android:id="@+id/appname" />
+        android:id="@+id/appname"
+        android:padding="5dp"/>
 
     <ImageView
         android:id="@+id/heart"
@@ -26,7 +26,7 @@
         android:layout_height="40dp"
         android:layout_toLeftOf="@id/line"
         android:src="@drawable/wishlist"
-        android:padding="10dp"
+        android:padding="2dp"
         />
 
         <View
@@ -42,7 +42,7 @@
         android:layout_height="40dp"
         android:src="@drawable/notifications"
         android:layout_alignParentRight="true"
-        android:padding="10dp"
+        android:padding="2dp"
         />
 
     </RelativeLayout>

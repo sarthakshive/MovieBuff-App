@@ -77,6 +77,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         search.addTextChangedListener(
                 new TextWatcher() {
                     @Override public void onTextChanged(CharSequence s, int start, int before, int count) {
+                        if(count>2)
                         networkRequest();
                     }
 
@@ -177,6 +178,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 findViewById(R.id.recycler_view).setVisibility(View.INVISIBLE);
             }
 
+            private void hideText()
+            {
+                findViewById(R.id.starttext).setVisibility(View.INVISIBLE);
+            }
+
             private void networkRequest()
             {
                 value = search.getText().toString();
@@ -187,6 +193,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     @Override
                     public void onResponse(Object response) {
                         hideProgress();
+                        hideText();
                         if (response instanceof Pojo) {
                             setAdapter((Pojo) response);
                             showRecycler();
@@ -196,8 +203,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         hideProgress();
-                        Log.d("-------------", error.getMessage());
-                        Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "gola", Toast.LENGTH_SHORT).show();
                     }
                 }, new Pojo());
 
