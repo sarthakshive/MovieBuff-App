@@ -18,7 +18,7 @@
         android:textColor="@color/color_3062ad"
         android:textStyle="bold"
         android:id="@+id/appname"
-        android:padding="5dp"/>
+        android:padding="10dp"/>
 
     <ImageView
         android:id="@+id/heart"
@@ -26,7 +26,7 @@
         android:layout_height="40dp"
         android:layout_toLeftOf="@id/line"
         android:src="@drawable/wishlist"
-        android:padding="2dp"
+        android:padding="10dp"
         />
 
         <View
@@ -42,7 +42,7 @@
         android:layout_height="40dp"
         android:src="@drawable/notifications"
         android:layout_alignParentRight="true"
-        android:padding="2dp"
+        android:padding="10dp"
         />
 
     </RelativeLayout>

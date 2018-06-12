@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -19,6 +20,8 @@ import com.example.sarthaktaneja.moviebuff.Database.MovieDatabase;
 import com.example.sarthaktaneja.moviebuff.Database.MyAsync;
 import com.example.sarthaktaneja.moviebuff.Model.Pojo1;
 import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
 
 import java.util.Calendar;
 
@@ -32,6 +35,10 @@ public class Main2Activity extends Activity  {
         ImageView wish=(ImageView) findViewById(R.id.heart);
         ImageView notify=(ImageView) findViewById(R.id.notify);
         final TextView time=(TextView) findViewById(R.id.movienam);
+        TextView movDetails = (TextView) findViewById(R.id.summary);
+        TextView rating = (TextView) findViewById(R.id.rating);
+        TextView title = (TextView) findViewById(R.id.movienam);
+        RatingBar ratingBar = (RatingBar) findViewById(R.id.stars);
 
         final MovieDatabase mdb= Room.databaseBuilder(getApplicationContext(),MovieDatabase.class,"Movie").build();
 
@@ -86,6 +93,10 @@ public class Main2Activity extends Activity  {
             }
         });
 
+        movDetails.setText(pojo1.getOverview().toString());
+        rating.setText(pojo1.getVoteAverage().toString());
+        title.setText(pojo1.getOriginalTitle().toString());
+        ratingBar.setRating(pojo1.getVoteAverage().floatValue());
 
     }
 
