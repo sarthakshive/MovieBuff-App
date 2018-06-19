@@ -6,6 +6,7 @@ import android.app.TimePickerDialog;
 import android.arch.persistence.room.Room;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -19,11 +20,14 @@ import com.example.sarthaktaneja.moviebuff.Database.Movie;
 import com.example.sarthaktaneja.moviebuff.Database.MovieDatabase;
 import com.example.sarthaktaneja.moviebuff.Database.MyAsync;
 import com.example.sarthaktaneja.moviebuff.Model.Pojo1;
+import com.example.sarthaktaneja.moviebuff.Notifications.setReminderr;
 import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class Main2Activity extends Activity  {
 
@@ -42,7 +46,7 @@ public class Main2Activity extends Activity  {
 
         final MovieDatabase mdb= Room.databaseBuilder(getApplicationContext(),MovieDatabase.class,"Movie").build();
 
-        Pojo1 pojo1= (Pojo1) getIntent().getSerializableExtra("Object");
+        final Pojo1 pojo1= (Pojo1) getIntent().getSerializableExtra("Object");
 
         String imgUrl="http://image.tmdb.org/t/p/w500/" + pojo1.getPosterPath();
         Picasso.with(this).load(imgUrl).error(R.drawable.ic_error_outline_black_24dp).placeholder(R.drawable.rotate).into(img);
@@ -65,29 +69,50 @@ public class Main2Activity extends Activity  {
             @Override
             public void onClick(View view) {
                 Calendar mcurrentTime = Calendar.getInstance();
-                int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
-                int minute = mcurrentTime.get(Calendar.MINUTE);
-                final Calendar c = Calendar.getInstance();
-                final int year = c.get(Calendar.YEAR);
-                final int month = c.get(Calendar.MONTH);
-                final int day = c.get(Calendar.DAY_OF_MONTH);
+                final int[] hour = {mcurrentTime.get(Calendar.HOUR_OF_DAY)};
+                final int[] minute = {mcurrentTime.get(Calendar.MINUTE)};
+                final int[] year = {mcurrentTime.get(Calendar.YEAR)};
+                final int[] month = {mcurrentTime.get(Calendar.MONTH)};
+                final int[] day = {mcurrentTime.get(Calendar.DAY_OF_MONTH)};
                 final TimePickerDialog mTimePicker;
                 final DatePickerDialog mDatePicker;
                 mTimePicker = new TimePickerDialog(Main2Activity.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
                         time.setText( selectedHour + ":" + selectedMinute);
+                        hour[0] = selectedHour;
+                        minute[0] = selectedMinute;
+                        Calendar cal = Calendar.getInstance();
+                        cal.set(Calendar.YEAR, year[0]);
+                        cal.set(Calendar.MONTH, month[0]);
+                        cal.set(Calendar.DATE, day[0]);
+                        cal.set(Calendar.HOUR_OF_DAY, hour[0]);
+                        cal.set(Calendar.MINUTE, minute[0]);
+                        cal.set(Calendar.SECOND, 0);
+                        cal.set(Calendar.MILLISECOND, 0);
+                        Date date = cal.getTime();
+
+                        Date d = new Date();
+                        String format="yyyy-MM-dd hh:mm:ss a";
+                        Log.d("--------------", String.valueOf(date.after(d)));
+                        Log.d("-----------------",new SimpleDateFormat(format).format(date));
+                        Log.d("-----------------",new SimpleDateFormat(format).format(d));
+                        setReminderr.Remind(date,pojo1.getTitle(),"Watch the movie now bitch!!",Main2Activity.this);
                     }
-                }, hour, minute, false);//NO 24 hour time
+                }, hour[0], minute[0], false);//NO 24 hour time
                 mTimePicker.setTitle("Select Time");
-                mTimePicker.show();
+
 
                 mDatePicker = new DatePickerDialog(Main2Activity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
                         time.setText(i + " " + i1 + " " + i2);
+                        day[0] = datePicker.getDayOfMonth();
+                        month[0] = datePicker.getMonth();
+                        year[0] = datePicker.getYear();
+                        mTimePicker.show();
                     }
-                },year,month,day);
+                }, year[0], month[0], day[0]);
                 mDatePicker.show();
 
             }
