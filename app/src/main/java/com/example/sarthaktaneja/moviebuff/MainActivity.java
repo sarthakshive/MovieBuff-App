@@ -203,7 +203,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         hideProgress();
-                        Toast.makeText(MainActivity.this, "gola", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
                     }
                 }, new Pojo());
 

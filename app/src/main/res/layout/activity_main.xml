@@ -4,76 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sarthaktaneja.moviebuff.MainActivity"
-    android:background="@color/black"
+    android:background="@color/brownish_grey"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    >
+    tools:context="com.example.sarthaktaneja.moviebuff.MainActivity"
+    android:orientation="horizontal">
 
-    <include layout="@layout/toolbar"
+    <include
+        layout="@layout/toolbar"
         android:layout_width="match_parent"
-         android:layout_height="50dp"/>
+        android:layout_height="60dp" />
 
     <RelativeLayout
         android:id="@+id/lyt_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
-        android:background="@drawable/rounded_corner_search"
-        >
+        android:background="@drawable/rounded_corner_search">
 
         <EditText
             android:id="@+id/search"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="@string/search"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
             android:backgroundTint="@android:color/transparent"
-            android:textCursorDrawable="@null"
+            android:cursorVisible="false"
+            android:hint="@string/search"
             android:imeOptions="actionSearch"
             android:inputType="text"
             android:maxLines="1"
-            android:cursorVisible="false"
-           />
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textCursorDrawable="@null" />
 
     </RelativeLayout>
 
-    <include layout="@layout/activity_main1"
-        android:layout_height="wrap_content"
+    <include
+        layout="@layout/activity_main1"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/lyt_search" />
 
     <ProgressBar
+        android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressbar"
         android:layout_centerInParent="true"
-        android:visibility="invisible"/>
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/search_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:padding="2dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="330dp"
         android:layout_marginTop="70dp"
-        android:src="@drawable/search_icon" />
+        android:padding="2dp"
+        android:src="@drawable/baseline_search_black_36" />
 
     <TextView
+        android:id="@+id/starttext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/starttext"
         android:layout_marginTop="200dp"
-        android:text="Welcome to Movie Buff!!"
         android:fontFamily="serif-monospace"
-        android:textSize="30sp"
-        android:textColor="@color/white"
-        android:visibility="visible"
         android:gravity="center"
-        />
-
+        android:text="Welcome to Movie Buff!!"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="visible" />
 
 
 </RelativeLayout>

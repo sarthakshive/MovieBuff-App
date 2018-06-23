@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.sarthaktaneja.moviebuff.Main2Activity"
     android:id="@+id/mdp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/brownish_grey">
 
     <include layout="@layout/toolbar1"
         android:layout_width="match_parent"
@@ -16,8 +17,8 @@
         android:id="@+id/movie_photo"
         android:layout_width="200dp"
         android:layout_height="250dp"
-        android:padding="10dp"
-        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="80dp"/>
 
     <TextView
@@ -35,13 +36,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/stars"
+        android:layout_below="@id/movienam"
         android:layout_toRightOf="@id/movie_photo"
         android:padding="5dp"
-        android:layout_marginTop="90dp"
         android:id="@+id/rating"
-        android:textSize="15sp"
-        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         />
 
@@ -49,10 +49,10 @@
         android:id="@+id/summary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/movie_photo"
-        android:layout_marginTop="150dp"
-        android:textColor="@color/black"
-        android:textSize="10sp"/>
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/movie_photo"
+        />
 
 
     <RatingBar
@@ -63,7 +63,7 @@
         android:numStars="10"
         android:stepSize="0.1"
         android:isIndicator="true"
-        android:layout_toRightOf="@id/movie_photo"
+        android:layout_below="@id/summary"
         />
 
 

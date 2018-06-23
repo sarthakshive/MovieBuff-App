@@ -72,7 +72,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.DetailVi
     public void onBindViewHolder(final DetailViewHolder holder, int position) {
         holder.title.setText(results.get(position).getTitle());
         String imgUrl="http://image.tmdb.org/t/p/w500/" + results.get(position).getPosterPath();
-        Picasso.with(context).load(imgUrl).error(R.drawable.ic_error_outline_black_24dp).into(holder.movieimg, new Callback() {
+        Picasso.with(context).load(imgUrl).error(R.drawable.baseline_error_outline_black_36).into(holder.movieimg, new Callback() {
             @Override
             public void onSuccess() {
                 holder.loader.setVisibility(View.GONE);
